@@ -1,0 +1,41 @@
+# === Digital Business Card — .gitignore ===
+# Статический проект (site/) публикуется на Netlify без сборки.
+# Ничего из необходимого для публикации сайта здесь не исключается.
+
+# --- Секреты и локальные переменные окружения ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*secret*
+
+# --- Служебные локальные настройки инструментов ---
+.claude/settings.local.json
+.netlify/
+
+# --- Системный мусор ОС ---
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Редакторы/IDE (локальные, не общие настройки проекта) ---
+.vscode/
+.idea/
+*.sublime-workspace
+
+# --- Временные и лог-файлы ---
+*.tmp
+*.temp
+*.log
+~$*
+
+# --- На случай появления Node-инструментов в будущем ---
+node_modules/
+npm-debug.log*
+yarn-error.log*

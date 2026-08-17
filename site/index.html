@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Екатерина Лаврова — дизайнер корпусной мебели в Чебоксарах. Электронная визитка с контактами и ссылками на социальные сети.">
+  <title>Екатерина Лаврова — дизайнер корпусной мебели</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/icons/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google fonts (Literata + Golos Text — шрифты компании «Антель»)
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Literata:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #ICON SPRITE (локальные inline-иконки, без внешних зависимостей)
+  -->
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24">
+      <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+      <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M6.6 3.5c.6 0 1.1.4 1.3 1l1 2.6c.2.5 0 1.1-.4 1.5L7.3 9.8c1 2.3 2.7 4 5 5l1.2-1.2c.4-.4 1-.5 1.5-.3l2.6 1c.6.2 1 .8 1 1.4v2.2c0 1.1-1 1.9-2 1.7-4.2-.7-9-3.3-11.7-9C3.9 8.6 3.6 6.7 3.7 5c.1-.9.9-1.5 1.7-1.5h1.2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M12 21s-7-6.1-7-11.5S8.6 3 12 3s7 2.6 7 6.5S12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+      <circle cx="12" cy="9.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6" />
+    </symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6" />
+      <ellipse cx="12" cy="12" rx="4" ry="9" fill="none" stroke="currentColor" stroke-width="1.6" />
+      <path d="M3.3 9.5h17.4M3.3 14.5h17.4" stroke="currentColor" stroke-width="1.4" />
+    </symbol>
+  </svg>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/designer-photo.jpg" alt="Екатерина Лаврова">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Екатерина Лаврова"><span class="name-line">Екатерина</span><span class="name-line">Лаврова</span></h1>
+
+          <p class="title">Дизайнер корпусной мебели</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn aria-expanded="false">
+          <span>Контакты</span>
+
+          <svg class="icon"><use href="#icon-chevron-down"></use></svg>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <svg class="icon"><use href="#icon-phone"></use></svg>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Телефон</p>
+
+              <a href="tel:+79623216500" class="contact-link">+7 (962) 321-65-00</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <svg class="icon"><use href="#icon-mail"></use></svg>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:antelmebel121@mail.ru" class="contact-link">antelmebel121@mail.ru</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <svg class="icon"><use href="#icon-globe"></use></svg>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Сайт</p>
+
+              <a href="https://antel21.ru/" class="contact-link" target="_blank" rel="noopener">antel21.ru</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <svg class="icon"><use href="#icon-pin"></use></svg>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Адрес</p>
+
+              <address>г. Чебоксары, ул. Ярославская, д. 29</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="quick-actions">
+
+          <li>
+            <a class="btn btn--accent" href="tel:+79623216500">
+              <svg class="icon"><use href="#icon-phone"></use></svg>
+              <span>Позвонить</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="btn btn--outline" href="https://max.ru/u/f9LHodD0cOLjsn7gh_Lmg_z8IVig74a9eWtvsDpJ12d5uOtqQXHDAdB_z-4" target="_blank" rel="noopener" aria-label="Написать в MAX">
+              <img class="btn-logo" src="./assets/icons/max.svg" alt="" width="20" height="20">
+              <span>Написать в MAX</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="btn btn--outline" href="https://t.me/Antel_mebel" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+              <img class="btn-logo" src="./assets/icons/telegram.svg" alt="" width="20" height="20">
+              <span>Написать в Telegram</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="btn btn--outline" href="https://vk.ru/antel21ru" target="_blank" rel="noopener" aria-label="Открыть ВКонтакте">
+              <img class="btn-logo" src="./assets/icons/vk.svg" alt="" width="20" height="20">
+              <span>Открыть ВКонтакте</span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active">
+
+        <header>
+          <h2 class="h2 article-title">Обо мне</h2>
+        </header>
+
+        <section class="about-text">
+
+          <p>
+            Дизайнер корпусной мебели. Помогаю превратить идею будущего интерьера в понятную визуальную концепцию
+            и продуманное пространство.
+          </p>
+
+          <p>
+            Работаю в Чебоксарах — от первого разговора о задаче до готового решения: планировка, материалы
+            и фурнитура для корпусной мебели.
+          </p>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
